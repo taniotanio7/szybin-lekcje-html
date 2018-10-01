@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Listy</title>
+    <style>
+        .odstepik {
+            padding-bottom: 120px;
+        }
+    </style>
+</head>
+<body>
+<h1>Lista 1 - standardowa numerowana</h1>
+<ol class="odstepik">
+    <li>Internet</li>
+    <li>Gry</li>
+    <li>Sport</li>
+</ol>
+
+<h1>Lista 2 - standardowa nienumerowana</h1>
+<h2>Popularne kodowania dla języka polskiego</h2>
+<ul class="odstepik">
+    <li>utf-8</li>
+    <li>iso-8859-2</li>
+    <li>windows-1250</li>
+</ul>
+
+<h1>Lista 3 - mieszana</h1>
+<ul class="odstepik">
+    <li>Klasy drugie
+        <ol>
+            <li>2Ti-1</li>
+            <li>2Ti-2</li>
+            <li>2Ti-3</li>
+        </ol>
+    </li>
+    <li>Klasy trzecie
+        <ol>
+            <li>3Ti-1</li>
+            <li>3Ti-2</li>
+        </ol>
+    </li>
+</ul>
+
+<h1>Lista 4 - cztery poziomy</h1>
+<ol class="odstepik">
+    <li value="3">
+        Klasy drugie
+        <ul type="circle">
+            <li>
+                2Ti-1
+                <ul type="square">
+                    <li>
+                        Grupa A
+                        <ol>
+                            <li>dziewczyny</li>
+                            <li>chłopcy</li>
+                        </ol>
+                    </li>
+                    <li>Grupa B</li>
+                </ul>
+            </li>
+            <li>
+                2Ti-2
+                <ul type="square">
+                    <li>Grupa A</li>
+                    <li>Grupa B</li>
+                </ul>
+            </li>
+            <li>
+                2Ti-3
+                <ul type="square">
+                    <li>Grupa A</li>
+                    <li>Grupa B</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Klasy trzecie
+        <ol>
+            <li>3Ti-1</li>
+            <li>3Ti-2</li>
+        </ol>
+    </li>
+</ol>
+
+<h1>Lista 5 - rzymska</h1>
+<ol type="i" class="odstepik">
+    <li>Alpha</li>
+    <li>Beta</li>
+    <li>Gamma</li>
+</ol>
+
+<h1>Lista 6 - definicji</h1>
+<dl>
+    <dt>S.M.A.R.T</dt>
+    <dd>
+        (ang. Self-Monitoring, Analysis and Reporting Technology) – system monitorowania i powiadamiania o błędach
+        działania twardego dysku.
+        Technologia ta została zaimplementowana w dyskach ATA-3, późniejszych ATA (czyli IDE), ATAPI oraz SCSI-3,
+        aby zwiększyć bezpieczeństwo składowanych danych. Dzięki niej dysk potrafi ocenić swój stan i jeśli awaria
+        jest wysoce prawdopodobna zaalarmować system operacyjny i użytkownika komputera. System zapewnia skuteczne
+        ostrzeganie o zbliżającej się awarii w około 30 do 40% przypadków.
+    </dd>
+    <dt>SCSI</dt>
+    <dd>
+        (ˈskʌzi, skrót z ang. Small Computer Systems Interface) – równoległa magistrala danych przeznaczona do
+        przesyłania danych między urządzeniami.
+        System SCSI do niedawna był powszechnie wykorzystywany głównie w wysokiej klasy serwerach i stacjach roboczych.
+        Obecnie jest on stopniowo wypierany przez nowszy interfejs SAS. Tańsze komputery domowe wykorzystują przeważnie
+        standard Serial ATA III, który i tak jest szybszy od SCSI (wcześniej najpowszechniejszy był standard ATA/IDE).
+    </dd>
+</dl>
+
+</body>
+</html>
