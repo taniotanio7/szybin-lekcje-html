@@ -3,27 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Zadanie 2</title>
+    <link rel="stylesheet" type="text/css" href="common.css">
 </head>
 
 <style>
-    .text-center {
-        text-align: center;
-    }
-
-    .container {
-        width: 50%;
-        margin: 0 auto;
-    }
-
     table {
         width: 500px;
-        border: 6px red;
+        border: 4px solid red;
+        border-collapse: separate;
     }
     tr {
         height: 50px;
     }
     td, th {
-        border: 6px red;
+        border: 1px solid red;
     }
 </style>
 <body>
@@ -35,7 +28,7 @@
 </header>
 
 <div class="container">
-    <table>
+    <table class="content-center">
         <thead>
         <tr>
             <th colspan="4" style="background-color: #00FF00">Nagłówek na zielonym tle</th>
@@ -64,6 +57,7 @@
             <td>Kolumna nr 8</td>
         </tr>
         </tbody>
+        <!-- Użyte kolorki: -->
         <!--#0099CC-->
         <!--#666666-->
         <!--#FF00FF-->
