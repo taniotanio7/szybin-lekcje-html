@@ -1,0 +1,76 @@
+/* ==== TŁA ==== */
+
+body {
+    background: url("obrazek.jpg") no-repeat fixed center right;
+}
+
+.red-background {
+    background-color: red;
+    color: white;
+}
+
+/* ==== TRANSFORMACJE TEKSTU */
+
+.italics {
+    font-style: italic;
+}
+
+.bigger {
+    font-size: 1.8em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.capitalize-letters {
+    text-transform: capitalize;
+}
+
+.capitalize {
+    font-variant: small-caps;
+}
+
+.smol-text {
+    font-size: 0.7em;
+}
+
+/* ==== PODKREŚLENIA ====  */
+
+.yellow-highlight {
+    background-color: yellow;
+}
+
+.red-highlight {
+    background-color: #FFBAC8;
+}
+
+.gray-highlight {
+    background-color: gray;
+}
+
+.green-highlight {
+    background-color: #5cf892;
+}
+
+/* ==== KOLORY TEKSTU ==== */
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.green-text {
+    color: green;
+}

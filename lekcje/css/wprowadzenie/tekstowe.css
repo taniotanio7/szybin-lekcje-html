@@ -1,0 +1,14 @@
+p {
+    text-indent: 40px; /* wartości odległości */
+    text-align: center; /* left, right, justify */
+    text-decoration: blink; /* blink, underline, overline – linia nad tekstem, line-through, none */
+    letter-spacing: 6px;
+    text-transform: capitalize;
+    /*
+        capitalize - kapitalki (od dużej litery, kazdy wyraz),
+        uppercase – wszystko dużymi literami,
+        lowercase – wszystko małymi literami,
+        none
+    */
+}
+
