@@ -1,0 +1,40 @@
+div {
+    border-width: 3px; /* thin/thick / medium / 5px */
+    border-color: red;
+    border-style: solid;
+    /*
+    dotted
+    dashed
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+     */
+
+    border-radius: 5px;
+    /*
+        5px 10px
+        5px 6px 7px 8px
+    */
+
+    border-bottom-color: #5cf892;
+    /*border-top-width: ;
+     border-left-style: ;
+    */
+
+    border: 2px green solid;
+
+    border-color: red green blue black;
+    border-style: solid double dotted dashed;
+
+    border-width: 2px 5px 8px 15px;
+    /* 4px 8px*/
+    /* góra-dół / lewy-prawy */
+
+
+
+
+}
