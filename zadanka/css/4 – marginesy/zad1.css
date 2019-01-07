@@ -1,0 +1,46 @@
+h1 {
+    background-color: greenyellow;
+}
+
+h1:nth-child(odd) {
+    background-color: dimgray;
+}
+
+.example1 {
+    margin: 30px;
+}
+
+.example2 {
+    margin-left: 20px;
+}
+
+.example3 {
+    margin: 20px 40px;
+}
+
+.example4 {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.example5 {
+    width: 250px;
+    padding: auto;
+}
+
+.example6 {
+    padding-top: 40px;
+}
+
+.example7 {
+    padding: 20px;
+}
+
+.example8 {
+    padding: 20px 40px;
+}
+
+.example9 {
+    padding-right: 50px;
+    text-align: right;
+}

@@ -1,0 +1,33 @@
+p {
+    font-size: 1.5em;
+}
+
+.pink {
+    border: 8px solid deeppink;
+}
+
+.green {
+    border-left: 10px solid darkgreen;
+    background-color: greenyellow;
+}
+
+.gray {
+    border-bottom: 7px solid darkolivegreen;
+    background-color: lightgray;
+}
+
+.red {
+    border: 4px solid red;
+}
+
+.round {
+    border-radius: 10px;
+}
+
+.round-cut {
+    border-radius: 0 10px 0 10px;
+}
+
+.round-bullet {
+    border-radius: 10px 20px 20px 10px;
+}

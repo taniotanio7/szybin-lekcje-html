@@ -1,0 +1,28 @@
+body {
+    background: #c0c0c0;
+    /*color: #ffff00;*/
+}
+
+div {
+    text-align: center;
+    background-color: #ffff00;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    color: #0000ff;
+    text-align: center;
+}
+
+h3 {
+    color: #800;
+    text-align: right;
+}
+
+span {
+    color: #00ff00;
+}
+
