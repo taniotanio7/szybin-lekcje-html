@@ -1,0 +1,134 @@
+/* STYLE DLA STRONY index.html */
+
+/* CSS-RESET */
+html {
+    background-color: white;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Halvetica Neue", "Halvetica", "Arial", sans-serif;
+    color: #4a4a4a;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+section {
+    padding: 3rem 1.5rem;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    color: #0a0a0a;
+    vertical-align: middle;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.box {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
+}
+
+h1 {
+    margin-bottom: 1.75rem;
+    color: #0a0a0a;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.125;
+}
+
+.has-text-centered {
+    text-align: center;
+}
+
+.has-gap-img {
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+}
+
+.table {
+    background-color: white;
+    color: #363636;
+}
+
+.table td,
+.table th {
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 1px;
+    padding: 0.5em 0.75em;
+    vertical-align: top;
+}
+
+.table.is-fullwidth {
+    width: 100%;
+}
+
+@media (max-width: 926px) {
+    .mapka {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .column.is-half {
+        flex: none;
+        width: 50%;
+    }
+
+    .column.is-75-percent {
+        flex: none;
+        width: 75%;
+    }
+
+    .columns {
+        display: flex;
+    }
+}
+
+.columns.is-centered {
+    justify-content: center;
+}
+
+@media screen and (min-width: 1088px) {
+    .column.is-half-desktop {
+        flex: none;
+        width: 50%;
+    }
+}

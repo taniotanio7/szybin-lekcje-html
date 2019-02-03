@@ -1,0 +1,51 @@
+.icon {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+@media screen and (min-width: 769px)
+{
+    figure {
+        max-width: 25%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .herb img {
+        width: 50%;
+    }
+}
+
+.herb img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.column img, figure {
+    width: 100%;
+}
+
+.atrakcje figcaption {
+    font-size: 0.75em;
+}
+
+@media screen and (min-width: 769px) {
+    .atrakcje-list > .column {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .atrakcje-list > .column {
+        margin: 15px 0;
+    }
+}
+
+.flex-is-column {
+    flex-direction: column;
+}
