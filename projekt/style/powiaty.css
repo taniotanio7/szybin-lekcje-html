@@ -19,6 +19,7 @@
 .herb img {
     width: 100%;
     margin-bottom: 1.5rem;
+    max-width: 350px;
 }
 
 a {
