@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flagi cz. 2</title>
+
+  <style>
+    /* FORCE ANTYALIASTING */
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* FORCE GPU RENDERING */
+    .gpu {
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+
+    div {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: beige;
+    }
+
+    .flag--2-3 {
+      border: 1px solid #e3e3e3;
+      width: 30vh;
+      height: 20vh;
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .flag--18-25 {
+      border: 1px solid #e3e3e3;
+      width: 30vh;
+      height: 21.6vh;
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .swittzerland {
+      background: linear-gradient(rgb(233, 63, 51) 20%, transparent 20%, transparent 80%, rgb(233, 63, 51) 80%), linear-gradient(90deg, rgb(233, 63, 51) 30%, transparent 30%, transparent 45%, white 45%, white 55%, transparent 55%, transparent 70%, rgb(233, 63, 51) 70%), linear-gradient(rgb(233, 63, 51) 42%, white 42%, white 58%, rgb(233, 63, 51) 58%);
+    }
+
+    .spain {
+      background: linear-gradient(rgb(200, 53, 43) 25%, rgb(248, 197, 51) 25%, rgb(248, 197, 51) 75%, rgb(200, 53, 43) 75%);
+    }
+
+    .spain-herb {
+      top: 6vh;
+      left: 7vh;
+      width: 8vh;
+      position: absolute;
+    }
+
+    .italy {
+      background: linear-gradient(90deg, rgb(74, 149, 70) 33.3%, white 33.3%, white 66.6%, rgb(208, 55, 52) 66.6%);
+    }
+
+    .iceland {
+      background: linear-gradient(90deg, transparent 28%, rgb(222, 60, 50) 28%, rgb(222, 60, 50) 34%, transparent 34%), linear-gradient(transparent 42%, white 42%, white 46%, rgb(222, 60, 50) 46%, rgb(222, 60, 50) 58%, white 58%, white 62%, transparent 62%), linear-gradient(90deg, rgb(10, 81, 158) 25%, white 25%, white 28%, rgb(222, 60, 50) 28%, rgb(222, 60, 50) 34%, white 34%, white 37%, rgb(10, 81, 158) 37%);
+    }
+
+    .greece {
+      background-color: white;
+      background-image: linear-gradient(to bottom, #0d5eaf 11.11%, white 11.11%, white 22.22%, #0d5eaf 22.22%, #0d5eaf 33.33%, white 33.33%, white 44.44%, #0d5eaf 44.44%, #0d5eaf 55.55%, white 55.55%, white 66.66%, #0d5eaf 66.66%, #0d5eaf 77.77%, white 77.77%, white 88.88%, #0d5eaf 88.88%, #0d5eaf 100%);
+    }
+    .greece:before, .greece:after {
+      content: '';
+      position: absolute;
+    }
+    .greece:before {
+      width: 37%;
+      height: 55.16%;
+      background-image: linear-gradient(to bottom, #0d5eaf 39.8%, white 39.8%, white 59.8%, #0d5eaf 59.8%);
+      top: 0;
+      left: 0;
+    }
+    .greece:after {
+      background: white;
+      top: 0;
+      left: 14.7%;
+      height: 56%;
+      width: 7.5%;
+    }
+  </style>
+</head>
+<body>
+<div class="gpu"></div>
+<div class="flag--2-3 greece"></div>
+<div class="flag--2-3 italy"></div>
+<div class="flag--18-25 iceland"></div>
+<div class="flag--2-3 swittzerland"></div>
+<div class="flag--2-3 spain">
+  <img class="spain-herb" src="hiszpania-herb.png">
+</div>
+
+</body>
+</html>

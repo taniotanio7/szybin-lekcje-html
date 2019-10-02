@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zad 3</title>
+
+    <style>
+      .konerek {
+        width: 90%;
+        margin: 60px auto 0;
+        background-color: red;
+        position: relative;
+        height: 50px;
+      }
+
+      .linki {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        position: absolute;
+        left: 20%;
+        top: 0;
+        right: 20%;
+        bottom: 0;
+      }
+
+      .linki a {
+        text-decoration: none;
+        /* background-position: center center; */
+        display: flex;
+        background-size: 75%;
+        color: black;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        border-radius: 100%;
+        height: 125px;
+        width: 125px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .linki a:hover {
+        border-radius: 30px;
+        height: 40px;
+        color: red !important;
+      }
+
+      .linki a[href="#glowna"] {
+        background-image: url("./img/maliny.jpg");
+      }
+
+      .linki a[href="#oferta"] {
+        background-image: url("./img/czeresnie.jpg");
+      }
+
+      .linki a[href="#cennik"] {
+        background-image: url("./img/banany.jpg");
+      }
+
+      .linki a[href="#galeria"] {
+        background-image: url("./img/jablka.jpg");
+        color: white;
+      }
+
+      .linki a[href="#kontakt"] {
+        background-image: url("./img/gruszki.jpg");
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="konerek">
+        <div class="linki">
+          <a href="#glowna">Strona główna</a><a href="#oferta">Oferta</a
+          ><a href="#cennik">Cennik</a><a href="#galeria">Galeria</a
+          ><a href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

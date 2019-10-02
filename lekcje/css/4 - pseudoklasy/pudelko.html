@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pudełko</title>
+  <style>
+  .z5 {
+    border: 2px solid blue;
+    font-size: 3rem;
+    max-width: 400px;
+  }
+
+  .z5 > * {
+    margin: auto;
+    text-align: center;
+  }
+
+  .z5 > *:nth-child(1) {
+    text-align: left;
+    margin: 50px;
+    background-color: red;
+  }
+
+  .z5 > *:nth-child(4) {
+    background-color: paleturquoise;
+    padding: 20px 0;
+  }
+
+  .z5 > *:last-child {
+    background-color: palevioletred;
+    text-align: right;
+    padding: 100px 25px 100px 0;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="z5">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+
+</body>
+</html>

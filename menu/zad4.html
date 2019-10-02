@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zad 4</title>
+
+    <style>
+      .kontenerek {
+        background-color: HSL(298, 76%, 72%);
+        padding: 0.5rem;
+        margin: 20px auto 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .linki {
+        display: flex;
+        justify-content: space-evenly;
+        width: 670px;
+        position: relative;
+        height: 21px;
+      }
+
+      .linki a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-sizing: border-box; */
+      }
+
+      .linki a:hover {
+        background-color: white;
+        color: black;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 0.96rem;
+        line-height: 0;
+        /* font-weight: normal; */
+        border: 1px solid black;
+        height: calc(100% + 1rem + 10px);
+        transform: translateY(calc(-0.5rem - 6px));
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="kontenerek">
+        <div class="linki">
+          <a href="#glowna">Strona główna</a><a href="#oferta">Oferta</a
+          ><a href="#cennik">Cennik</a><a href="#galeria">Galeria</a
+          ><a href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

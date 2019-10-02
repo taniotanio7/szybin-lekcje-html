@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+    background: url("assets/tlo.jpg");
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    color: royalblue;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+h3 {
+    color: royalblue;
+}
+
+p, li {
+    font-weight: 200;
+    color: #2C4D99;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin: auto;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: royalblue;
+    font-weight: 700;
+}
