@@ -26,6 +26,12 @@ h2 {
   flex-direction: column;
 }
 
+@media (max-width: 742px) {
+  .heading {
+    background-size: cover;
+  }
+}
+
 .navigation {
   background-color: HSL(237, 17%, 23%);
   display: flex;
@@ -47,6 +53,7 @@ h2 {
   color: white;
   list-style-type: none;
   display: flex;
+  padding-left: 0;
 }
 
 .navigation--links a {
@@ -60,8 +67,18 @@ h2 {
   color: HSL(58, 51%, 82%) !important;
 }
 
-article {
+.content {
   background: url("../static/bg.jpg") center 0 no-repeat fixed;
+}
+
+@media (max-width: 615px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation--header {
+    margin-top: 0.5rem;
+  }
 }
 
 .max-width {
@@ -74,7 +91,8 @@ h3 {
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 2.2rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0;
+  padding-top: 1rem;
   margin-bottom: 0.2rem;
 }
 
@@ -95,6 +113,7 @@ h3 {
   flex-shrink: 1;
   flex-basis: auto;
   align-self: stretch;
+  width: 35%;
 }
 
 .photos--subrow > img {
@@ -107,9 +126,7 @@ h3 {
 
 .photos--bigimg {
   align-self: flex-start;
-  flex-grow: 1;
-  margin-right: 2rem;
-  max-width: 773px;
+  max-width: 65%;
 }
 
 .photos--bigimg__left {
@@ -118,6 +135,36 @@ h3 {
 
 .photos--bigimg__right {
   margin-left: 2rem;
+}
+
+@media (max-width: 640px) {
+  .photos--row {
+    flex-direction: column;
+  }
+
+  .photos--bigimg {
+    width: 100%;
+  }
+
+  .photos--subrow > img {
+    margin-top: 1.5rem;
+  }
+
+  .photos--bigimg__left,
+  .photos--bigimg__right {
+    margin-right: 0;
+  }
+
+  .photos--bigimg__right {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+hr {
+  border-top: 1px solid black;
+  border-bottom: 0;
+  width: 90%;
 }
 
 aside {
@@ -177,6 +224,23 @@ p {
   padding-right: 0.75rem;
 }
 
+@media (max-width: 640px) {
+  hr {
+    width: calc(100% - 1.5rem);
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  aside {
+    flex-direction: column;
+  }
+
+  .bio,
+  .social {
+    width: unset;
+  }
+}
+
 footer {
   text-align: center;
   display: flex;
@@ -209,4 +273,53 @@ footer a {
   font-size: 1.7rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.social--icon__circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: HSL(237, 17%, 23%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social--icon__glyph {
+  color: white;
+}
+
+.social--list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social--list > li {
+  display: flex;
+  align-items: center;
+}
+
+.social--list > li:nth-of-type(n + 2) {
+  margin-top: 1.25rem;
+}
+
+.social--item__text {
+  margin-left: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #585555;
+}
+
+@media (max-width: 492px) {
+  .footer--mail {
+    width: calc(100% - 2rem);
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer--mail__text {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
