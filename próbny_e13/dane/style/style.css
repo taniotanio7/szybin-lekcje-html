@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  row-gap: 1rem;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  grid-area: nav;
+  margin-left: 1rem;
+}
+
+nav > ul {
+  margin-top: 2rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav > ul > li {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > ul > li > a:hover {
+  color: darkslategray;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+  margin-right: 1rem;
+  text-align: right;
+}
+
+footer {
+  margin-left: 2rem;
+  grid-area: footer;
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.gallery--big {
+  display: flex;
+  height: 60vh;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.gallery--big > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.gallery--favicons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery--favicons > img {
+  max-width: 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+td {
+  text-align: center;
+  border: 1px solid black;
+}
+
+td[scope="row"] {
+  text-align: left;
+  font-weight: 500;
+}
+
+td[scope="col"] {
+  font-weight: 500;
+}
+
+form {
+  display: grid;
+  grid-template-areas: "label input";
+  grid-template-columns: 1fr 2fr;
+  row-gap: 1rem;
+  width: 100%;
+}
+
+form > input,
+form > textarea {
+  display: block;
+}
+
+form > textarea {
+  overflow-y: scroll;
+}
+
+form > textarea {
+  resize: none;
+}
+
+button {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.317rem;
+  background-color: #aaa;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+button[type="submit"] {
+  background-color: #1fa3ec;
+}
+
+button[type="reset"] {
+  background-color: palevioletred;
+}
+
+input,
+textarea {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #141414;
+    color: white;
+  }
+
+  nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav > ul > li > a:hover {
+    color: lightgray;
+  }
+}
