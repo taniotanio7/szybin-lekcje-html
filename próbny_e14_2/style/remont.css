@@ -1,0 +1,94 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header--logo {
+  background-color: rgb(255, 213, 162);
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  height: 30px;
+}
+
+.header--links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(191, 112, 17);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header--links > li {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+a {
+  color: white;
+}
+
+.header--links a {
+  text-transform: uppercase;
+}
+
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact--button > a {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: auto;
+  background-color: rgb(191, 112, 17);
+  width: 100%;
+  text-align: end;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer--text {
+  margin: 0.25rem 1rem 0.25rem 0;
+  padding: 0;
+}
+
+button {
+  background-color: rgb(191, 112, 17);
+  color: white;
+  border: 2px solid brown;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  margin-left: 2rem;
+}
+
+#errors {
+  color: red;
+  margin-top: 1.5rem;
+}

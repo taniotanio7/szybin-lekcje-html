@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Wyremontuj mieszkanie</title>
+    <link rel="stylesheet" href="style/remont.css" />
+    <link rel="stylesheet" href="style/reset.css" class="css" />
+  </head>
+  <body>
+    <header>
+      <div class="header--logo">
+        <img src="static/logo.png" />
+      </div>
+      <nav>
+        <ul class="header--links">
+          <li>
+            <a href="index.html">O nas</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+          </li>
+          <li>
+            <a href="kalkulator.html">Kalkulator</a>
+          </li>
+          <li>
+            <a href="http://www.jakremontowac.pl/" target="_blank"
+              >Polecane strony</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Malowanie pokoju: 8 zł za m<sup>2</sup></h1>
+      <div class="calculator">
+        <p>Wymiary pokoju w metrach:</p>
+        <form id="form" class="form">
+          <input type="number" name="bok1" required />
+          x
+          <input type="number" name="bok2" required />
+        </form>
+      </div>
+      <button id="calculate-btn">OBLICZ KOSZT</button>
+      <div id="errors"></div>
+      <div id="result" style="display: none;">
+        <p>Powierzchnia całkowita ścian: <span id="size"></span></p>
+        <p>Koszt malowania: <span id="cost"></span> zł</p>
+      </div>
+    </main>
+    <footer>
+      <p class="footer--text">
+        Autor strony: Jonatan Witoszek
+      </p>
+    </footer>
+    <script src="script/kalkulator.js"></script>
+  </body>
+</html>
